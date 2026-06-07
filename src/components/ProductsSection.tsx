@@ -41,7 +41,7 @@ export default function ProductsSection() {
       name: "LDPE Granules",
       category: "raw",
       score: 95,
-      imageUrl: "/images/hdpe_before_after.png",
+      imageUrl: "/images/ldpe_before_after.png",
       applications: ["Agricultural sheets", "Flexible packaging", "Squeeze bottles"],
       benefits: ["Superior flexibility", "Excellent clarity & gloss", "High tear resistance"],
       density: "0.91 - 0.93 g/cm³",
@@ -54,7 +54,7 @@ export default function ProductsSection() {
       name: "PP Granules",
       category: "raw",
       score: 97,
-      imageUrl: "/images/hdpe_before_after.png",
+      imageUrl: "/images/pp_before_after.png",
       applications: ["Automotive components", "Houseware & furniture", "Woven sacks"],
       benefits: ["High thermal resistance", "Excellent fatigue life", "Low density / light weight"],
       density: "0.90 - 0.91 g/cm³",
@@ -94,7 +94,7 @@ export default function ProductsSection() {
       name: "Terrace Insulation Tiles",
       category: "infra",
       score: 98,
-      imageUrl: "/images/pavers_before_after.png",
+      imageUrl: "/images/tiles_before_after.png",
       applications: ["Rooftop heat barriers", "Balcony flooring", "Terrace walkways"],
       benefits: ["Thermal insulation lining", "Weather & UV proofing", "Ultralight weight load"],
       density: "0.98 - 1.05 g/cm³",
@@ -127,15 +127,14 @@ export default function ProductsSection() {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/5 dark:bg-accent/10 text-accent font-semibold text-xs tracking-wider uppercase">
-            <ShieldCheck className="h-3.5 w-3.5" />
-            Certifiable Excellence
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-            High-Performance <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Sustainable Products</span>
+          <span className="text-xs font-extrabold uppercase tracking-widest text-accent">
+            Industrial Catalog
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground mt-3">
+            Engineered Material Products
           </h2>
           <p className="text-base text-foreground/60 max-w-2xl font-light">
-            Engineered to replace virgin materials and traditional concrete, reducing carbon footprints while maintaining industrial load tolerances.
+            ReclaimNature outputs raw material resins matching ISO standards and sturdy structural civil products designed for municipal and private developer deployment.
           </p>
 
           {/* Tab Switcher */}
@@ -149,7 +148,7 @@ export default function ProductsSection() {
               }`}
             >
               <Layers className="h-4 w-4" />
-              Recycled Raw Materials
+              Category A: Raw Materials
             </button>
             <button
               onClick={() => setActiveTab("infra")}
@@ -160,7 +159,7 @@ export default function ProductsSection() {
               }`}
             >
               <Construction className="h-4 w-4" />
-              Infrastructure Products
+              Category B: Civil Infrastructure
             </button>
           </div>
         </div>

@@ -57,7 +57,7 @@ export default function AboutSection() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-20px" }}
         >
           {/* Left: Headline & Core Narrative */}
           <div className="lg:col-span-5 flex flex-col gap-6">
@@ -123,7 +123,7 @@ export default function AboutSection() {
                   className="flex gap-4 sm:gap-6 relative"
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
+                  viewport={{ once: true, margin: "-20px" }}
                   transition={{ duration: 0.6, delay: idx * 0.1, ease: "easeOut" }}
                 >
                   {/* Timeline Bullet */}

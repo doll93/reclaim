@@ -82,7 +82,7 @@ export default function ResearchSection() {
                 className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/5 hover:border-accent/15 transition-all flex flex-col sm:flex-row gap-6 items-start glow-card"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-20px" }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
               >
                 {/* Visual Circle */}

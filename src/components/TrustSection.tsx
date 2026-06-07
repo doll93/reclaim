@@ -24,7 +24,7 @@ export default function TrustSection() {
   ];
 
   return (
-    <section className="py-12 border-y border-foreground/5 bg-foreground/[0.01] relative z-20">
+    <section className="py-12 border-y border-foreground/5 bg-foreground/[0.01] relative z-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {trusts.map((t, i) => (

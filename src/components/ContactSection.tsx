@@ -94,9 +94,12 @@ export default function ContactSection() {
                     info@reclaimnature.co.in
                   </a>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-accent shrink-0" />
-                  <span>+91 612 220 5432</span>
+                <div className="flex items-start gap-3">
+                  <Phone className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                  <div className="flex flex-col gap-1">
+                    <span>+91 612 220 5432</span>
+                    <span>+91 87578 75119</span>
+                  </div>
                 </div>
               </div>
             </div>

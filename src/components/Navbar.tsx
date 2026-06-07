@@ -47,9 +47,14 @@ export default function Navbar() {
           <div className="bg-gradient-to-tr from-secondary to-accent p-2 rounded-xl text-white shadow-md shadow-accent/20 group-hover:rotate-12 transition-transform duration-300">
             <Recycle className="h-5 w-5" />
           </div>
-          <span className="font-bold text-xl tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
-            Reclaim<span className="text-accent font-extrabold">Nature</span>
-          </span>
+          <div className="flex flex-col">
+            <span className="font-extrabold text-base tracking-tight leading-none text-foreground">
+              Reclaim<span className="text-accent">Nature</span>
+            </span>
+            <span className="text-[9px] font-semibold text-accent tracking-widest uppercase mt-0.5">
+              Bihar, India
+            </span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}

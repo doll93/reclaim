@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
               className="glass-panel p-8 rounded-3xl border border-foreground/5 hover:border-accent/15 transition-all flex flex-col gap-5 text-left glow-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-20px" }}
               transition={{ duration: 0.5, delay: idx * 0.05 }}
             >
               {/* Icon Container */}

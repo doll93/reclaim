@@ -75,7 +75,7 @@ export default function HowItWorks() {
               className="flex flex-col items-center text-center lg:text-left lg:items-start relative z-10"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-20px" }}
               transition={{ duration: 0.6, delay: idx * 0.1, ease: "easeOut" }}
             >
               {/* Step indicator circle */}

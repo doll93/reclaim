@@ -13,7 +13,7 @@ interface CounterProps {
 function StatCounter({ value, duration = 1.5, suffix = "" }: CounterProps) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const isInView = useInView(ref, { once: true, margin: "-10px" });
 
   useEffect(() => {
     if (isInView) {

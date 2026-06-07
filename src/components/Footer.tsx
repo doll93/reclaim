@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#070A13] text-slate-300 border-t border-slate-900/60">
+    <footer className="relative bg-[#070A13] text-slate-300 border-t border-slate-900/60 overflow-hidden">
       {/* Ambient background glows */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-[100px] pointer-events-none" />
@@ -20,13 +20,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand & Tagline */}
           <div className="flex flex-col gap-6">
-            <a href="#hero" className="flex items-center gap-2.5">
+            <a href="#hero" className="flex items-center gap-2.5 group">
               <div className="bg-gradient-to-tr from-secondary to-accent p-2 rounded-xl text-white">
                 <Recycle className="h-5 w-5" />
               </div>
-              <span className="font-bold text-xl tracking-tight text-white">
-                Reclaim<span className="text-accent font-extrabold">Nature</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="font-bold text-base tracking-tight leading-none text-white">
+                  Reclaim<span className="text-accent">Nature</span>
+                </span>
+                <span className="text-[9px] font-semibold text-accent tracking-widest uppercase mt-0.5">
+                  Bihar, India
+                </span>
+              </div>
             </a>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               ReclaimNature is committed to accelerating the circular economy and contributing toward global Net Zero goals through innovative plastic recycling technologies in Bihar.
@@ -79,9 +84,12 @@ export default function Footer() {
                   info@reclaimnature.co.in
                 </a>
               </div>
-              <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-accent shrink-0" />
-                <span>+91 612 220 5432</span>
+              <div className="flex items-start gap-3">
+                <Phone className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-1">
+                  <span>+91 612 220 5432</span>
+                  <span>+91 87578 75119</span>
+                </div>
               </div>
             </div>
           </div>
