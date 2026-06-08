@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import TrustSection from "@/components/TrustSection";
 import AboutSection from "@/components/AboutSection";
 import ProductsSection from "@/components/ProductsSection";
 import ImpactDashboard from "@/components/ImpactDashboard";
@@ -10,6 +9,7 @@ import ResearchSection from "@/components/ResearchSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import CareersSection from "@/components/CareersSection";
+import PartnersSection from "@/components/PartnersSection";
 import SignupSection from "@/components/SignupSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -20,14 +20,14 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 w-full overflow-x-hidden">
         <HeroSection />
-        <TrustSection />
         <AboutSection />
+        <WhyChooseUs />
         <ProductsSection />
-        <ImpactDashboard />
         <HowItWorks />
         <TraceabilitySection />
+        <ImpactDashboard />
         <ResearchSection />
-        <WhyChooseUs />
+        <PartnersSection />
         <Testimonials />
         <CareersSection />
         <SignupSection />

@@ -9,20 +9,20 @@ export default function ResearchSection() {
     {
       title: "IIT Patna R&D",
       subtitle: "Polymer Compounding",
-      desc: "Joint research on catalytic depolymerization. IIT Patna provides advanced polymer characterization facilities, while ReclaimNature offers live compounding pilot testing and student research sponsorships.",
-      tag: "Research Agreement"
+      desc: "Proposed joint research on catalytic depolymerization. Planned model for utilizing advanced characterization facilities alongside live compounding pilot tests.",
+      tag: "Discussion Ongoing"
     },
     {
       title: "CIPET Patna Labs",
       subtitle: "Testing & Standards",
-      desc: "CIPET Patna provides accredited testing laboratories for Melt Flow Index (MFI) and tensile verification. ReclaimNature offers industrial materials internships and hands-on compounding audits.",
-      tag: "Testing Protocol"
+      desc: "Planned protocol for testing Melt Flow Index (MFI) and tensile verification. Aimed at auditing compounding batches and establishing training programs.",
+      tag: "Discussion Ongoing"
     },
     {
-      title: "Sustainability Internships",
-      subtitle: "Student Programs",
-      desc: "Open to engineering and science students. Offers active participation in raw polymer compounding, circular logistics modeling, and accredited material testing validation.",
-      tag: "Enrollment Open"
+      title: "CSE Delhi",
+      subtitle: "Knowledge Partner",
+      desc: "Proposed framework collaboration to formulate circular economy frameworks, municipal waste audit models, and regional recycling standards.",
+      tag: "Discussion Ongoing"
     }
   ];
 

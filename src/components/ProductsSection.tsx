@@ -148,7 +148,7 @@ export default function ProductsSection() {
               }`}
             >
               <Layers className="h-4 w-4" />
-              Category A: Raw Materials
+              Category A
             </button>
             <button
               onClick={() => setActiveTab("infra")}
@@ -159,14 +159,14 @@ export default function ProductsSection() {
               }`}
             >
               <Construction className="h-4 w-4" />
-              Category B: Civil Infrastructure
+              Category B
             </button>
           </div>
         </div>
 
         {/* Product Grid with AnimatePresence */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 min-h-[480px]"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 min-h-[360px]"
           layout
         >
           <AnimatePresence mode="popLayout">
@@ -205,40 +205,7 @@ export default function ProductsSection() {
                   </div>
 
                   {/* Details */}
-                  <h3 className="text-xl font-bold text-foreground mb-3">{p.name}</h3>
-                  
-                  {/* Technical values */}
-                  <div className="grid grid-cols-2 gap-x-2 gap-y-1 bg-foreground/[0.02] border border-foreground/5 p-3 rounded-xl mb-4 text-[10px] font-mono text-foreground/70">
-                    <div>Density: {p.density}</div>
-                    <div>MFI: {p.flowRate}</div>
-                    <div className="col-span-2">Strength: {p.tensile}</div>
-                  </div>
-
-                  {/* Applications */}
-                  <div className="mb-4">
-                    <p className="text-xs font-bold uppercase tracking-wider text-foreground/40 mb-2">Key Applications</p>
-                    <ul className="flex flex-col gap-1">
-                      {p.applications.map((app, i) => (
-                        <li key={i} className="text-xs text-foreground/75 flex items-center gap-1.5">
-                          <span className="w-1 h-1 rounded-full bg-accent" />
-                          {app}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Benefits */}
-                  <div className="mb-6">
-                    <p className="text-xs font-bold uppercase tracking-wider text-foreground/40 mb-2">Benefits</p>
-                    <ul className="flex flex-col gap-1">
-                      {p.benefits.map((ben, i) => (
-                        <li key={i} className="text-xs text-foreground/75 flex items-center gap-1.5">
-                          <CheckCircle2 className="h-3 w-3 text-accent shrink-0" />
-                          {ben}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-6">{p.name}</h3>
                 </div>
 
                 <a

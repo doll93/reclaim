@@ -62,11 +62,10 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-xs uppercase tracking-wider">Navigation</h4>
             <div className="flex flex-col gap-3 text-sm">
               <a href="#about" className="hover:text-accent transition-colors">About Us</a>
+              <a href="#why-us" className="hover:text-accent transition-colors">Why ReclaimNature</a>
               <a href="#products" className="hover:text-accent transition-colors">Our Products</a>
-              <a href="#impact" className="hover:text-accent transition-colors">Environmental Impact</a>
-              <a href="#how-it-works" className="hover:text-accent transition-colors">How It Works</a>
-              <a href="#research" className="hover:text-accent transition-colors">Research & Partnerships</a>
-              <a href="#careers" className="hover:text-accent transition-colors">Careers & Internships</a>
+              <a href="#approach" className="hover:text-accent transition-colors">Our Approach</a>
+              <a href="#research" className="hover:text-accent transition-colors">Research & Dev</a>
             </div>
           </div>
 
@@ -94,23 +93,16 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Mission & CTA */}
+          {/* Our Story (Coming Soon) */}
           <div className="flex flex-col gap-5">
-            <h4 className="text-white font-semibold text-xs uppercase tracking-wider">Our Vision</h4>
-            <p className="text-sm text-slate-400 leading-relaxed italic">
-              &ldquo;A Cleaner Bihar, A Brighter Future.&rdquo;
-            </p>
-            <p className="text-sm text-slate-500 leading-relaxed">
-              Transforming plastic waste into high-performance raw materials and sustainable infrastructure.
-            </p>
-            <div className="mt-2">
-              <a
-                href="#signup"
-                className="inline-flex items-center justify-center w-full py-3 rounded-xl bg-accent hover:bg-secondary text-white font-bold text-sm transition-all shadow-lg shadow-accent/10 hover:shadow-accent/20"
-              >
-                Join the Movement
-              </a>
+            <div className="flex items-center gap-2">
+              <h4 className="text-white font-semibold text-xs uppercase tracking-wider">Our Story</h4>
+              <span className="text-[9px] font-bold text-accent bg-accent/10 px-2 py-0.5 rounded tracking-wider">COMING SOON</span>
             </div>
+            <p className="text-xs text-slate-400 leading-relaxed font-light">
+              <span className="block text-[10px] font-semibold text-accent mb-2">( We will Include this section once we launch our full website. )</span>
+              We are a purpose-driven team fueled by a passion to deliver meaningful, lasting results for our community, our region, and our environment. By blending social impact with industrial innovation, we are building a sustainable ecosystem where people can live healthily, businesses can grow responsibly, and the local economy can prosper for generations to come.
+            </p>
           </div>
         </div>
 

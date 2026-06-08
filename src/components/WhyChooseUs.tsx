@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section id="why-us" className="py-24 bg-background relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-foreground/5" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
             Core Competence
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-            Why Partner With <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">ReclaimNature</span>
+            Why <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">ReclaimNature</span>
           </h2>
           <p className="text-base text-foreground/60 max-w-2xl font-light">
             We operate at the intersection of industrial reliability, social responsibility, and scientific validation.

@@ -22,7 +22,7 @@ export default function ContactSection() {
     },
     {
       q: "Are your raw polymer granules certified for manufacturing?",
-      a: "Yes. Every batch of HDPE, LDPE, PP, and PET is profiled in partnership with CIPET Patna. We supply test certificates documenting precise density, Melt Flow Index (MFI), ash content, and tensile tolerances."
+      a: "Yes. Every batch of HDPE, LDPE, PP, and PET is profiled. We are working to establish testing protocols with CIPET Patna to supply test certificates documenting precise density, Melt Flow Index (MFI), ash content, and tensile tolerances."
     },
     {
       q: "Can you customize compound properties for custom molding?",
@@ -30,7 +30,7 @@ export default function ContactSection() {
     },
     {
       q: "How can academic researchers or students collaborate with you?",
-      a: "We offer sponsored R&D collaborations (like our work with IIT Patna) and structured internships. Students and scientists can register directly through our Onboarding Sign-up Portal above."
+      a: "We are developing sponsored R&D collaborations (such as proposed research with IIT Patna) and structured internship opportunities. Students and scientists can register directly through our Onboarding Sign-up Portal above."
     }
   ];
 
@@ -257,48 +257,6 @@ export default function ContactSection() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
-
-            {/* FAQ Accordions */}
-            <div className="flex flex-col gap-4">
-              <h3 className="text-xl font-bold text-foreground flex items-center gap-2">
-                <HelpCircle className="h-5 w-5 text-accent" /> Frequently Asked Questions
-              </h3>
-              <div className="flex flex-col gap-3.5">
-                {faqs.map((faq, idx) => {
-                  const isOpen = openFaq === idx;
-                  return (
-                    <div key={idx} className="border border-foreground/5 rounded-2xl overflow-hidden transition-all bg-foreground/[0.01]">
-                      <button
-                        onClick={() => toggleFaq(idx)}
-                        className="w-full flex items-center justify-between p-5 text-left cursor-pointer hover:bg-foreground/[0.01]"
-                      >
-                        <span className="font-semibold text-sm text-foreground">{faq.q}</span>
-                        <motion.div
-                          animate={{ rotate: isOpen ? 180 : 0 }}
-                          className="text-foreground/40"
-                        >
-                          <ChevronDown className="h-4.5 w-4.5" />
-                        </motion.div>
-                      </button>
-                      <AnimatePresence initial={false}>
-                        {isOpen && (
-                          <motion.div
-                            initial={{ height: 0 }}
-                            animate={{ height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.25 }}
-                          >
-                            <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-foreground/65 leading-relaxed font-light border-t border-foreground/5">
-                              {faq.a}
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  );
-                })}
-              </div>
             </div>
 
           </div>

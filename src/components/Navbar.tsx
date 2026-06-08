@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useTheme } from "./ThemeProvider";
-import { Recycle, Sun, Moon, Menu, X, ArrowRight } from "lucide-react";
+import { Recycle, Sun, Moon, Menu, X, ArrowRight, Home } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
@@ -23,13 +23,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#about" },
+    { name: "About Us", href: "#about" },
+    { name: "Why ReclaimNature", href: "#why-us" },
     { name: "Products", href: "#products" },
-    { name: "Impact", href: "#impact" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Traceability", href: "#traceability" },
-    { name: "Research", href: "#research" },
-    { name: "Careers", href: "#careers" },
+    { name: "Our Approach", href: "#approach" },
+    { name: "Research & Dev", href: "#research" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -59,6 +57,13 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
+          <a
+            href="#hero"
+            className="text-foreground/75 hover:text-accent transition-colors duration-200"
+            aria-label="Home"
+          >
+            <Home className="h-4.5 w-4.5" />
+          </a>
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -122,6 +127,14 @@ export default function Navbar() {
             className="md:hidden glass-panel-heavy border-t border-foreground/5 shadow-2xl"
           >
             <div className="px-6 py-8 flex flex-col gap-5">
+              <a
+                href="#hero"
+                onClick={() => setIsOpen(false)}
+                className="text-base font-semibold text-foreground/80 hover:text-accent py-1.5 transition-colors border-b border-foreground/5 flex items-center gap-2"
+              >
+                <Home className="h-4.5 w-4.5" />
+                Home
+              </a>
               {navLinks.map((link) => (
                 <a
                   key={link.name}
