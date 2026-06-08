@@ -58,13 +58,13 @@ export default function PartnersSection() {
               {knowledgePartners.map((partner, idx) => (
                 <motion.div
                   key={idx}
-                  className="glass-panel p-6 rounded-2xl border border-foreground/5 hover:border-accent/15 transition-all flex gap-4 items-start glow-card"
+                  className="glass-panel p-6 rounded-2xl border border-foreground/10 hover:border-accent/15 transition-all flex gap-4 items-start glow-card"
                   initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
                 >
-                  <div className="p-3 rounded-xl bg-foreground/[0.02] border border-foreground/5 text-accent shrink-0">
+                  <div className="p-3 rounded-xl bg-foreground/[0.02] border border-foreground/10 text-accent shrink-0">
                     {partner.icon}
                   </div>
                   <div>
@@ -86,7 +86,7 @@ export default function PartnersSection() {
             </h3>
             
             <motion.div
-              className="glass-panel p-8 rounded-3xl border border-foreground/5 flex flex-col items-center justify-center text-center gap-6 py-14 glow-card flex-1 min-h-[300px]"
+              className="glass-panel p-8 rounded-3xl border border-foreground/10 flex flex-col items-center justify-center text-center gap-6 py-14 glow-card flex-1 min-h-[300px]"
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -103,7 +103,7 @@ export default function PartnersSection() {
                 </p>
               </div>
 
-              <div className="border-t border-foreground/5 pt-4 w-full flex items-center justify-center gap-1.5 text-xs text-secondary font-mono">
+              <div className="border-t border-foreground/10 pt-4 w-full flex items-center justify-center gap-1.5 text-xs text-secondary font-mono">
                 <ShieldAlert className="h-4 w-4" /> PARTNERSHIP REGISTRATION COMING SOON
               </div>
             </motion.div>

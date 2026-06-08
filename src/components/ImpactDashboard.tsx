@@ -33,7 +33,7 @@ export default function ImpactDashboard() {
   const treesEquivalent = Math.round(tonnes * current.co2 * 45).toLocaleString(); // 1 Tonne CO2 = ~45 trees matured for a year
 
   return (
-    <section id="impact" className="py-24 bg-foreground/[0.02] border-y border-foreground/5 relative overflow-hidden">
+    <section id="impact" className="py-24 bg-foreground/[0.02] border-y border-foreground/10 relative overflow-hidden">
       {/* Ambient backgrounds */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[140px] pointer-events-none" />
 
@@ -57,7 +57,7 @@ export default function ImpactDashboard() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center max-w-5xl mx-auto">
           
           {/* Left: Interactive Controls */}
-          <div className="lg:col-span-5 flex flex-col gap-8 p-8 sm:p-10 rounded-3xl glass-panel border border-foreground/5 shadow-xl text-left bg-background/50">
+          <div className="lg:col-span-5 flex flex-col gap-8 p-8 sm:p-10 rounded-3xl glass-panel border border-foreground/10 shadow-xl text-left bg-background/50">
             
             {/* Polymer Type selector */}
             <div className="flex flex-col gap-3">
@@ -110,7 +110,7 @@ export default function ImpactDashboard() {
               </div>
             </div>
 
-            <div className="border-t border-foreground/5 pt-5 flex items-start gap-2.5 text-xs text-foreground/55 font-light">
+            <div className="border-t border-foreground/10 pt-5 flex items-start gap-2.5 text-xs text-foreground/55 font-light">
               <ShieldCheck className="h-4.5 w-4.5 text-accent shrink-0 mt-0.5" />
               <span>Calculations are modeled based on standard EPA WARM and ISO 14040 polymer lifecycle methodologies.</span>
             </div>
@@ -122,7 +122,7 @@ export default function ImpactDashboard() {
             
             {/* Metric 1: Carbon Offset */}
             <motion.div
-              className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/5 text-left flex flex-col gap-4 glow-card"
+              className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/10 text-left flex flex-col gap-4 glow-card"
               layout
             >
               <div className="w-12 h-12 rounded-2xl bg-accent/15 border border-accent/25 flex items-center justify-center text-accent">
@@ -138,7 +138,7 @@ export default function ImpactDashboard() {
 
             {/* Metric 2: Trees Equivalent */}
             <motion.div
-              className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/5 text-left flex flex-col gap-4 glow-card"
+              className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/10 text-left flex flex-col gap-4 glow-card"
               layout
             >
               <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500">
@@ -154,7 +154,7 @@ export default function ImpactDashboard() {
 
             {/* Metric 3: Crude Oil Saved */}
             <motion.div
-              className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/5 text-left flex flex-col gap-4 glow-card"
+              className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/10 text-left flex flex-col gap-4 glow-card"
               layout
             >
               <div className="w-12 h-12 rounded-2xl bg-secondary/15 border border-secondary/25 flex items-center justify-center text-secondary">
@@ -170,7 +170,7 @@ export default function ImpactDashboard() {
 
             {/* Metric 4: Landfill Space */}
             <motion.div
-              className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/5 text-left flex flex-col gap-4 glow-card"
+              className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/10 text-left flex flex-col gap-4 glow-card"
               layout
             >
               <div className="w-12 h-12 rounded-2xl bg-highlight/15 border border-highlight/25 flex items-center justify-center text-highlight">

@@ -27,7 +27,7 @@ export default function ResearchSection() {
   ];
 
   return (
-    <section id="research" className="py-24 bg-foreground/[0.02] border-t border-foreground/5 relative overflow-hidden">
+    <section id="research" className="py-24 bg-foreground/[0.02] border-t border-foreground/10 relative overflow-hidden">
       <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
@@ -79,7 +79,7 @@ export default function ResearchSection() {
             {initiatives.map((item, idx) => (
               <motion.div
                 key={idx}
-                className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/5 hover:border-accent/15 transition-all flex flex-col sm:flex-row gap-6 items-start glow-card"
+                className="glass-panel p-6 sm:p-8 rounded-3xl border border-foreground/10 hover:border-accent/15 transition-all flex flex-col sm:flex-row gap-6 items-start glow-card"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-20px" }}

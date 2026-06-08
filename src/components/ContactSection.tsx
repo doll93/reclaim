@@ -107,7 +107,7 @@ export default function ContactSection() {
             {/* Custom SVG Map of Bihar with pulsing beacon on Patna */}
             <div className="flex flex-col gap-4 text-left">
               <h4 className="text-xs font-bold uppercase tracking-wider text-foreground/40">Geographic Operations Hub</h4>
-              <div className="w-full h-56 rounded-3xl bg-foreground/[0.02] border border-foreground/5 relative flex items-center justify-center overflow-hidden">
+              <div className="w-full h-56 rounded-3xl bg-foreground/[0.02] border border-foreground/10 relative flex items-center justify-center overflow-hidden">
                 <svg className="w-full h-full p-4 text-foreground/10 dark:text-foreground/5" viewBox="0 0 400 250">
                   {/* Simplified outline representing Bihar State borders */}
                   <path
@@ -135,7 +135,7 @@ export default function ContactSection() {
                 </svg>
 
                 {/* Status Indicator */}
-                <div className="absolute bottom-3 left-3 bg-background/80 px-2 py-0.5 rounded border border-foreground/5 text-[9px] font-mono text-accent flex items-center gap-1.5">
+                <div className="absolute bottom-3 left-3 bg-background/80 px-2 py-0.5 rounded border border-foreground/10 text-[9px] font-mono text-accent flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-accent animate-ping" />
                   LOGISTICS HUB ACTIVE
                 </div>
@@ -147,7 +147,7 @@ export default function ContactSection() {
           <div className="lg:col-span-7 flex flex-col gap-12 text-left">
             
             {/* Inquiry Form */}
-            <div className="p-6 sm:p-8 rounded-3xl glass-panel border border-foreground/5">
+            <div className="p-6 sm:p-8 rounded-3xl glass-panel border border-foreground/10">
               <h3 className="text-xl font-bold text-foreground mb-6">Send an Inquiry</h3>
               <AnimatePresence mode="wait">
                 {!submitted ? (

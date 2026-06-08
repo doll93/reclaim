@@ -75,7 +75,7 @@ export default function HowItWorks() {
           {steps.map((step, idx) => (
             <motion.div
               key={step.id}
-              className="group relative flex flex-col items-center text-center p-6 rounded-3xl glass-panel border border-foreground/5 hover:border-accent/15 transition-all glow-card z-10"
+              className="group relative flex flex-col items-center text-center p-6 rounded-3xl glass-panel border border-foreground/10 hover:border-accent/15 transition-all glow-card z-10"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-20px" }}

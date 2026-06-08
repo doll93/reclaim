@@ -87,7 +87,7 @@ export default function AboutSection() {
             {/* Purpose Subsection */}
             <motion.div 
               variants={itemVariants}
-              className="p-8 rounded-3xl glass-panel border border-foreground/5 hover:border-accent/10 transition-all text-left flex flex-col gap-4 relative overflow-hidden glow-card"
+              className="p-8 rounded-3xl glass-panel border border-foreground/10 hover:border-accent/10 transition-all text-left flex flex-col gap-4 relative overflow-hidden glow-card"
             >
               <div className="absolute top-0 right-0 p-4 opacity-5">
                 <Target className="h-24 w-24 text-accent" />
@@ -106,7 +106,7 @@ export default function AboutSection() {
             {/* Vision Subsection */}
             <motion.div 
               variants={itemVariants}
-              className="p-8 rounded-3xl glass-panel border border-foreground/5 hover:border-accent/10 transition-all text-left flex flex-col gap-4 relative overflow-hidden glow-card"
+              className="p-8 rounded-3xl glass-panel border border-foreground/10 hover:border-accent/10 transition-all text-left flex flex-col gap-4 relative overflow-hidden glow-card"
             >
               <div className="absolute top-0 right-0 p-4 opacity-5">
                 <Eye className="h-24 w-24 text-secondary" />
@@ -160,7 +160,7 @@ export default function AboutSection() {
                 className={`p-8 rounded-3xl glass-panel border transition-all duration-300 relative overflow-hidden flex flex-col justify-between text-left group glow-card ${
                   isSpotlight
                     ? "lg:col-span-2 border-rose-500/20 dark:border-rose-500/30 bg-gradient-to-br from-rose-500/[0.04] via-background to-background hover:border-rose-500/40 shadow-[0_0_20px_rgba(244,63,94,0.05)]"
-                    : "border-foreground/5 hover:border-accent/15 hover:shadow-lg hover:shadow-accent/5"
+                    : "border-foreground/10 hover:border-accent/15 hover:shadow-lg hover:shadow-accent/5"
                 }`}
               >
                 {/* Subtle background glow on hover */}
@@ -175,14 +175,14 @@ export default function AboutSection() {
                     <div className={`p-4 rounded-2xl border transition-colors duration-300 shrink-0 ${
                       isSpotlight
                         ? "bg-rose-500/10 border-rose-500/20 text-rose-500 dark:text-rose-400 shadow-[0_0_15px_rgba(244,63,94,0.1)]"
-                        : "bg-foreground/[0.02] border-foreground/5 group-hover:border-accent/20 group-hover:bg-accent/5"
+                        : "bg-foreground/[0.02] border-foreground/10 group-hover:border-accent/20 group-hover:bg-accent/5"
                     }`}>
                       {pt.icon}
                     </div>
                     <span className={`text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full ${
                       isSpotlight
                         ? "bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20"
-                        : "bg-foreground/[0.03] text-foreground/50 border border-foreground/5"
+                        : "bg-foreground/[0.03] text-foreground/50 border border-foreground/10"
                     }`}>
                       {pt.badge}
                     </span>

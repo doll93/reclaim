@@ -24,11 +24,11 @@ export default function TrustSection() {
   ];
 
   return (
-    <section className="py-12 border-y border-foreground/5 bg-foreground/[0.01] relative z-20 overflow-hidden">
+    <section className="py-12 border-y border-foreground/10 bg-foreground/[0.01] relative z-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {trusts.map((t, i) => (
-            <div key={i} className="flex items-center gap-4 p-4.5 rounded-2xl glass-panel border border-foreground/5 hover:border-accent/10 transition-colors">
+            <div key={i} className="flex items-center gap-4 p-4.5 rounded-2xl glass-panel border border-foreground/10 hover:border-accent/10 transition-colors">
               <div className="p-3 rounded-xl bg-accent/5 dark:bg-accent/10 shrink-0">
                 {t.icon}
               </div>

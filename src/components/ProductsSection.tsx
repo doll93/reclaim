@@ -138,7 +138,7 @@ export default function ProductsSection() {
           </p>
 
           {/* Tab Switcher */}
-          <div className="flex p-1 rounded-2xl bg-foreground/5 border border-foreground/5 mt-8 max-w-md w-full">
+          <div className="flex p-1 rounded-2xl bg-foreground/5 border border-foreground/10 mt-8 max-w-md w-full">
             <button
               onClick={() => setActiveTab("raw")}
               className={`flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl text-xs font-bold transition-all duration-300 cursor-pointer ${
@@ -178,11 +178,11 @@ export default function ProductsSection() {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: -20 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className={`rounded-3xl glass-panel p-6 flex flex-col justify-between border border-foreground/5 hover:border-accent/15 transition-all glow-card overflow-hidden`}
+                className={`rounded-3xl glass-panel p-6 flex flex-col justify-between border border-foreground/10 hover:border-accent/15 transition-all glow-card overflow-hidden`}
               >
                 <div>
                   {/* Before/After Product Image */}
-                  <div className="relative w-full h-44 rounded-2xl overflow-hidden border border-foreground/5 mb-6 group">
+                  <div className="relative w-full h-44 rounded-2xl overflow-hidden border border-foreground/10 mb-6 group">
                     <img
                       src={p.imageUrl}
                       alt={`${p.name} Before and After`}
@@ -198,7 +198,7 @@ export default function ProductsSection() {
                       <span className="text-[9px] font-bold text-white bg-accent/95 px-2 py-0.5 rounded tracking-wider shadow">AFTER</span>
                     </div>
 
-                    <div className="absolute top-3 right-3 flex items-center gap-1 bg-background/90 px-2.5 py-1 rounded-full border border-foreground/5 shadow-md z-10">
+                    <div className="absolute top-3 right-3 flex items-center gap-1 bg-background/90 px-2.5 py-1 rounded-full border border-foreground/10 shadow-md z-10">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent animate-ping" />
                       <span className="text-[10px] font-mono text-accent font-bold">ECO: {p.score}%</span>
                     </div>

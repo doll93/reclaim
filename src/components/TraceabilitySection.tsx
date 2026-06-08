@@ -6,7 +6,7 @@ import { Lock, ShieldCheck } from "lucide-react";
 export default function TraceabilitySection() {
   return (
     <section id="traceability" className="py-24 bg-background relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-foreground/5" />
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-foreground/10" />
       <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 md:px-12 relative z-10 text-center">
@@ -26,7 +26,7 @@ export default function TraceabilitySection() {
         </div>
 
         {/* Coming soon glass card */}
-        <div className="max-w-md mx-auto p-8 rounded-3xl glass-panel border border-foreground/5 shadow-2xl relative overflow-hidden flex flex-col items-center gap-6 py-12 glow-card">
+        <div className="max-w-md mx-auto p-8 rounded-3xl glass-panel border border-foreground/10 shadow-2xl relative overflow-hidden flex flex-col items-center gap-6 py-12 glow-card">
           <div className="w-16 h-16 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent animate-pulse">
             <Lock className="h-6 w-6" />
           </div>

@@ -73,7 +73,7 @@ export default function SignupSection() {
   };
 
   return (
-    <section id="signup" className="py-24 bg-foreground/[0.02] border-y border-foreground/5 relative overflow-hidden">
+    <section id="signup" className="py-24 bg-foreground/[0.02] border-y border-foreground/10 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/4 w-[350px] h-[350px] bg-accent/5 rounded-full blur-[100px] pointer-events-none" />
 
@@ -95,7 +95,7 @@ export default function SignupSection() {
 
         {/* Tab switchers */}
         {!isSubmitted && (
-          <div className="flex p-1 rounded-2xl bg-foreground/5 border border-foreground/5 mb-8 max-w-lg mx-auto">
+          <div className="flex p-1 rounded-2xl bg-foreground/5 border border-foreground/10 mb-8 max-w-lg mx-auto">
             <button
               onClick={() => {
                 setUserType("partner");
@@ -142,7 +142,7 @@ export default function SignupSection() {
         )}
 
         {/* Form panel */}
-        <div className="glass-panel p-8 sm:p-12 rounded-3xl border border-foreground/5 shadow-2xl relative min-h-[420px] flex items-center justify-center">
+        <div className="glass-panel p-8 sm:p-12 rounded-3xl border border-foreground/10 shadow-2xl relative min-h-[420px] flex items-center justify-center">
           
           <AnimatePresence mode="wait">
             {!isSubmitted ? (

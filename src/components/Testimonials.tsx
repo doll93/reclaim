@@ -49,7 +49,7 @@ export default function Testimonials() {
 
   return (
     <section className="py-24 bg-background relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-foreground/5" />
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-foreground/10" />
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
@@ -78,7 +78,7 @@ export default function Testimonials() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.98 }}
               transition={{ duration: 0.4 }}
-              className="w-full glass-panel p-8 sm:p-12 rounded-3xl border border-foreground/5 flex flex-col justify-between relative shadow-xl text-left"
+              className="w-full glass-panel p-8 sm:p-12 rounded-3xl border border-foreground/10 flex flex-col justify-between relative shadow-xl text-left"
             >
               {/* Quote Icon */}
               <div className="absolute top-8 right-8 text-accent/15">
@@ -91,7 +91,7 @@ export default function Testimonials() {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6 border-t border-foreground/5">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6 border-t border-foreground/10">
                 <div>
                   <h4 className="font-bold text-base text-foreground">{testimonials[index].author}</h4>
                   <p className="text-xs text-foreground/50 mt-1">{testimonials[index].role} &bull; {testimonials[index].location}</p>
